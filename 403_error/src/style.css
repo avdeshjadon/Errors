@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ececec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.error-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.svg-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+
+#error {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+.error-text {
+    margin: 15px auto 0;
+    max-width: 90%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.error-text h1 {
+    font-size: clamp(32px, 5vw, 46px);
+    color: #333;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.error-text h2 {
+    font-size: clamp(22px, 3.5vw, 30px);
+    color: #666;
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.error-text p {
+    font-size: clamp(15px, 2.2vw, 18px);
+    color: #888;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+    .error-container {
+        padding: 10px 20px;
+        max-height: 100vh;
+    }
+
+    .svg-wrapper {
+        max-width: 480px;
+    }
+
+    .error-text {
+        margin: 15px auto 0;
+    }
+
+    .error-text h1 {
+        font-size: 42px;
+        margin: 8px 0;
+    }
+
+    .error-text h2 {
+        font-size: 28px;
+        margin: 6px 0;
+    }
+
+    .error-text p {
+        font-size: 17px;
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .error-container {
+        padding: 15px;
+    }
+
+    .svg-wrapper {
+        max-width: 380px;
+    }
+
+    .error-text {
+        margin: 15px auto 0;
+        max-width: 95%;
+    }
+
+    .error-text h1 {
+        margin: 6px 0;
+    }
+
+    .error-text h2 {
+        margin: 5px 0;
+    }
+
+    .error-text p {
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .error-container {
+        padding: 10px;
+    }
+
+    .svg-wrapper {
+        max-width: 400px;
+    }
+
+    .error-text {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .error-text h1 {
+        margin: 6px 0;
+    }
+
+    .error-text h2 {
+        margin: 6px 0;
+    }
+
+    .error-text p {
+        margin: 10px 0;
+    }
+
+    .error-text p br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+
+    .error-container {
+        padding: 5px;
+    }
+
+    .svg-wrapper {
+        max-width: 300px;
+    }
+
+    .error-text {
+        margin: 15px auto;
+        padding: 0 10px;
+    }
+
+    .error-text h1 {
+        margin: 5px 0;
+    }
+
+    .error-text h2 {
+        margin: 5px 0;
+    }
+
+    .error-text p {
+        margin: 8px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .svg-wrapper {
+        max-width: 250px;
+    }
+
+    .error-text {
+        margin: 10px auto;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 1601px) {
+    .svg-wrapper {
+        max-width: 450px;
+    }
+
+    .error-text {
+        max-width: 700px;
+        margin: 20px auto 0;
+    }
+
+    .error-text h1 {
+        font-size: 42px;
+    }
+
+    .error-text h2 {
+        font-size: 28px;
+    }
+
+    .error-text p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-height: 700px) and (orientation: landscape) {
+    .error-container {
+        padding: 5px 20px;
+        min-height: auto;
+    }
+
+    .svg-wrapper {
+        max-width: 280px;
+    }
+
+    .error-text {
+        margin: 5px auto 0;
+    }
+
+    .error-text h1 {
+        font-size: clamp(20px, 4vw, 28px);
+        margin: 3px 0;
+    }
+
+    .error-text h2 {
+        font-size: clamp(14px, 2.5vw, 20px);
+        margin: 2px 0;
+    }
+
+    .error-text p {
+        font-size: clamp(11px, 1.8vw, 14px);
+        margin: 3px 0;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-height: 800px) {
+    .error-container {
+        padding: 5px 20px;
+    }
+
+    .svg-wrapper {
+        max-width: 320px;
+    }
+
+    .error-text {
+        margin: 8px auto 0;
+    }
+
+    .error-text h1 {
+        margin: 4px 0;
+    }
+
+    .error-text h2 {
+        margin: 3px 0;
+    }
+
+    .error-text p {
+        margin: 4px 0;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#svg-hole {
+    transform-origin: center;
+    animation: scaleUp 0.8s ease-out forwards;
+}
+
+.error-text h1 {
+    opacity: 0;
+    animation: fadeInScale 0.8s ease-out 0.5s forwards;
+}
+
+.error-text h2 {
+    opacity: 0;
+    animation: slideInLeft 0.8s ease-out 1s forwards;
+}
+
+.error-text p {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out 1.5s forwards;
+}
